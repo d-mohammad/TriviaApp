@@ -1,0 +1,16 @@
+<div class="jumbotron">
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        {{input type="email" value=emailAddress class="form-control" placeholder="E-mail address." autofocus="autofocus"}}
+        <label for="inputPassword" class="sr-only">Password</label>
+        {{input type="password" value=password class="form-control" placeholder="Password" autofocus=""}}
+        <div class="checkbox">
+        <label>
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" {{action "signIn" 'password'}}>Sign in</button>
+        <p>Need an account?<a href="/sign-up">Register</a></p>
+    </form>
+</div>

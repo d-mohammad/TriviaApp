@@ -1,0 +1,6 @@
+{
+  "name": "triviaapp",
+  "dependencies": {
+    "sweetalert": "~1.1.0"
+  }
+}

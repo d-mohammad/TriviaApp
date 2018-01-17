@@ -1,0 +1,50 @@
+@import "bootstrap";
+
+.form-signin{
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#startGame{
+    display: block;
+    margin: 0 auto;
+}
+
+#question{
+    font-size: 24px;
+    text-align: center;
+}
+
+#answer1{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 45px;
+}
+
+#answer2{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 45px
+}
+
+#answer3{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 45px;
+}
+
+#answer4{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 45px;
+}
+
+.col-md-2{
+    font-weight: bold;
+}

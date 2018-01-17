@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'index' class="navbar-brand" }}TriviaApp{{/link-to}}
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+        {{#if session.isAuthenticated}}
+        {{else}}
+        {{#link-to 'sign-in' tagName="li"}}<a href="">Sign In</a>{{/link-to}}
+        {{/if}}
+        {{!--{{#link-to 'index' tagName="li" }}<a href="">Home</a>{{/link-to}}--}}
+        {{#if session.isAuthenticated}}
+        {{#link-to 'game' tagName="li" }}<a href="">Game</a>{{/link-to}}
+        {{/if}}
+        {{!--{{#link-to 'sign-up' tagName="li"}}<a href="">Sign Up</a>{{/link-to}}--}}
+        {{#if session.isAuthenticated}}
+        {{#link-to 'sign-out' tagName="li"}}<a href="">Sign Out</a>{{/link-to}}
+        {{/if}}
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
